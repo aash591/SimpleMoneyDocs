@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features &amp; how-to guide — SimpleMoney</title>
+<meta name="description" content="Every SimpleMoney feature explained with real-life examples and step-by-step how-tos: accounts, transactions, budgets, loans, debts, subscriptions, backup and security.">
+<meta name="theme-color" content="#1f6bff">
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/"><img src="/assets/img/favicon.png" alt="" width="34" height="34"><span>Simple<b>Money</b></span></a>
+  <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="/features" aria-current="page">Features</a>
+    <a href="#faq">FAQ</a>
+    <a href="/privacy">Privacy</a>
+    <button class="icon-btn" id="theme-btn" aria-label="Toggle dark mode">◐</button>
+  </nav>
+</div></header>
+
+<div class="wrap docs">
+<aside class="toc" aria-label="On this page">
+  <h4>Start</h4>
+  <a href="#idea">The core idea</a>
+  <a href="#quickstart">Quick start</a>
+  <h4>Every day</h4>
+  <a href="#accounts">Accounts &amp; categories</a>
+  <a href="#transactions">Adding transactions</a>
+  <a href="#history">Transaction history</a>
+  <a href="#budgets">Budgets</a>
+  <a href="#home">Home dashboard</a>
+  <h4>Commitments</h4>
+  <a href="#loans">Loans &amp; EMIs</a>
+  <a href="#debts">Debts</a>
+  <a href="#subscriptions">Subscriptions</a>
+  <h4>More money, more places</h4>
+  <a href="#currency">Multiple currencies</a>
+  <a href="#upi">Pay with UPI</a>
+  <h4>Safe &amp; yours</h4>
+  <a href="#backup">Backup &amp; sync</a>
+  <a href="#security">Security</a>
+  <a href="#data">Your data</a>
+  <a href="#customize">Customization</a>
+  <h4>Help</h4>
+  <a href="#faq">FAQ</a>
+</aside>
+
+<main>
+<div class="doc-intro">
+  <h1>Features &amp; how-to guide</h1>
+  <p>Each section below says <strong>why</strong> a feature exists, shows a <strong>real-life example</strong>, and walks through <strong>how to use it</strong>. Menu paths like <code>More → Settings</code> refer to the bottom tabs of the app: Home, Transactions, Budgets and More.</p>
+</div>
+
+<!-- ============ CORE IDEA ============ -->
+<section class="feature no-shot" id="idea">
+  <div>
+    <h2>The core idea: what vs. where</h2>
+    <p class="lede">Every transaction answers two questions — <strong>what was the money for?</strong> (a category) and <strong>where did it come from?</strong> (an account).</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>If “Food paid by card” and “Food paid in cash” become two different categories, you can never see your real food spending. Keeping the two apart means one honest total per category — and one honest balance per account.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You spend ₹500 on dinner using HDFC Bank and ₹200 on tea using cash. Food shows <strong>₹700</strong>; HDFC Bank drops by ₹500 and Cash by ₹200. Later you withdraw ₹1,000 from the ATM — that is a <em>transfer</em> (Bank → Cash), so it doesn’t count as spending.</p></div>
+    <div class="flow"><span class="chip">Expense</span><span class="chip">Income</span><span class="chip">Transfer</span></div>
+    <p>Three transaction types cover everything: money out, money in, and money moved between your own accounts.</p>
+  </div>
+</section>
+
+<section class="feature no-shot" id="quickstart">
+  <div>
+    <h2>Quick start (2 minutes)</h2>
+    <ol class="steps">
+      <li><strong>Add an account.</strong> Open <code>More → Manage Accounts</code> and add Cash, your bank, a wallet — whatever you use. Give each its starting balance. A fresh install starts with no accounts.</li>
+      <li><strong>Glance at your categories.</strong> A set of common ones (Food &amp; Beverage, Transport, Bills…) is ready. Edit or delete any of them under <code>More → Categories</code>.</li>
+      <li><strong>Record your first expense.</strong> Tap the blue <strong>+</strong> button, enter the amount, pick a category and account, save.</li>
+      <li><strong>Optional:</strong> sign in with Google on the welcome screen (or later in <code>More → Settings → Sync</code>) to back up. You can skip it entirely.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ACCOUNTS ============ -->
+<section class="feature" id="accounts">
+  <div>
+    <h2><img src="/assets/icons/bank_card.webp" alt="" width="44" height="44">Accounts &amp; categories</h2>
+    <p class="lede">Accounts are where money lives. Categories are what it’s for. Both are fully yours to shape.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Your real life is spread across cash, a salary account, a credit card and maybe a wallet app. Accounts let each balance stay accurate; categories let your reports ignore <em>how</em> you paid.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You get a second bank account for savings. Add it once, and move money to it with a transfer — your “Monthly spending” stays untouched. When you close an old wallet, <strong>archive</strong> it: it disappears from pickers and totals but its past transactions stay readable.</p></div>
+    <h3>How to add an account</h3>
+    <ol class="steps">
+      <li>Open <code>More → Manage Accounts</code> and tap add.</li>
+      <li>Type a name (e.g. “HDFC Bank”), pick a currency from the offline list and an icon.</li>
+      <li>Enter the opening balance and save. Accounts can be reordered, and opened to edit or archive.</li>
+    </ol>
+    <h3>How to organise categories</h3>
+    <ol class="steps">
+      <li>Open <code>More → Categories</code>. Expense and income categories are listed separately.</li>
+      <li>Add a category, choose an icon from the 3D icon set, and optionally give it a <strong>parent</strong> to make it a subcategory (Food &amp; Beverage → Cafe).</li>
+      <li>Subcategories roll up to their parent in totals and charts, so you can be as detailed or as simple as you like.</li>
+    </ol>
+    <p>Prefer to correct a balance instead of logging a transaction? Use <strong>Adjust balance</strong> from the + menu — set the balance to a new value, or add/subtract an amount.</p>
+  </div>
+  <figure class="shot"><img src="/assets/img/more.webp" alt="The More tab with Manage Accounts, Categories, Debts, Loans, Subscriptions and Settings" loading="lazy" width="411" height="896"><figcaption>The More tab</figcaption></figure>
+</section>
+
+<!-- ============ TRANSACTIONS ============ -->
+<section class="feature" id="transactions">
+  <div>
+    <h2><img src="/assets/icons/paper_money_two.webp" alt="" width="44" height="44">Adding transactions</h2>
+    <p class="lede">The goal: record a normal expense in a few seconds. Four short steps, big number keypad, nothing extra on screen unless you ask.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Money apps die from friction. If logging a coffee takes a minute, you stop doing it. Each step shows just one question, so you can tap through quickly.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You’re at the counter paying ₹180 for groceries by UPI. Tap <strong>+</strong> → type <code>180</code> → <em>Groceries</em> → <em>HDFC Bank</em> → done, before the shopkeeper hands you the bag.</p></div>
+    <h3>Record an expense or income</h3>
+    <div class="flow"><span class="chip blue">Amount</span><span class="arrow">→</span><span class="chip blue">Category</span><span class="arrow">→</span><span class="chip blue">Account</span><span class="arrow">→</span><span class="chip blue">Date</span><span class="arrow">→</span><span class="chip">Save</span></div>
+    <ol class="steps">
+      <li>Tap the blue <strong>+</strong> and choose <em>Add expense</em> or <em>Add income</em>.</li>
+      <li>Enter the amount, then pick a category. If it has subcategories you can pick one, or choose <em>“Use … only”</em> to stay at the parent level. For income you choose a <em>source</em> instead.</li>
+      <li>Pick the account (<em>Pay from</em> for expenses, <em>Deposit to</em> for income) and confirm the date. Add a note if you want one.</li>
+    </ol>
+    <p>Missing a category or account? Both pickers have an <em>Add</em> button, so you never have to leave the flow.</p>
+    <h3>Transfer money between your accounts</h3>
+    <ol class="steps">
+      <li>Tap <strong>+</strong> and choose <em>Transfer money</em>.</li>
+      <li>Pick <em>Transfer from</em>, <em>Transfer to</em>, then the amount and date.</li>
+      <li>If the two accounts use different currencies, SimpleMoney suggests the received amount from the latest exchange rate and lets you type what actually arrived (useful when a bank charges a fee).</li>
+    </ol>
+    <div class="callout note"><b class="k">Good to know</b><p>Editing or deleting a transaction reverses its effect on account balances, and asks you to confirm first. Payments that belong to a loan are undone from the loan itself (see <a href="#loans">Loans</a>).</p></div>
+  </div>
+</section>
+
+<!-- ============ HISTORY ============ -->
+<section class="feature" id="history">
+  <div>
+    <h2><img src="/assets/icons/bank_transfer.webp" alt="" width="44" height="44">Transaction history</h2>
+    <p class="lede">Everything you’ve recorded, grouped by day, with the month’s opening balance, closing balance, money in and money out at the top.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Month-by-month tabs answer “what happened in March?” instantly, and the opening/closing balance lets you check the app against your bank statement.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>Your credit card bill looks too high. Open <em>Transactions</em>, filter to that card’s account, and scroll through the month — you spot a duplicate charge of ₹3,896 on the 25th.</p></div>
+    <h3>How to find things</h3>
+    <ul class="tight">
+      <li><strong>Switch period</strong> — swipe the month tabs, or use the ⋮ menu → <em>Select time range</em> for quarter or all-time.</li>
+      <li><strong>Search</strong> — tap the magnifier and type what you’re looking for.</li>
+      <li><strong>Filter</strong> — choose an account from the chip at the top; use the ⋮ menu to filter by type (expense / income / transfer) or by category.</li>
+      <li><strong>Hide your balance</strong> — tap the eye next to <em>Total balance</em> to mask it with dots when someone’s looking over your shoulder.</li>
+      <li><strong>Edit</strong> — tap any row to change or delete it.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="/assets/img/transactions.webp" alt="Transactions screen for September with opening and closing balance" loading="lazy" width="411" height="896"><figcaption>Transactions, September</figcaption></figure>
+</section>
+
+<!-- ============ BUDGETS ============ -->
+<section class="feature" id="budgets">
+  <div>
+    <h2><img src="/assets/icons/budget_total_3d.webp" alt="" width="44" height="44">Budgets</h2>
+    <p class="lede">Give each part of your life a monthly limit, and watch how much is used and how much is left — without spreadsheets.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Knowing you spent ₹4,100 on food is trivia. Knowing you have ₹900 left for the next 9 days is a decision. Budgets turn history into guidance, and they’re a core feature — not a paid add-on.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You set Food &amp; Beverage to ₹5,000. By the 20th the bar shows 74% used with ₹1,290 left, so you cook at home this weekend. You also set one budget called <em>Fun &amp; shopping</em> that covers both Shopping and Entertainment — they share a single limit.</p></div>
+    <h3>How to set a budget</h3>
+    <ol class="steps">
+      <li>Open the <strong>Budgets</strong> tab and tap <strong>+</strong>.</li>
+      <li>Name the budget, choose the currency, and pick the category (or several categories to share one limit).</li>
+      <li>Enter the monthly amount and save.</li>
+      <li>Use the month selector at the top to look at any month, and the account selector to switch currency.</li>
+    </ol>
+    <p>The card at the top totals your category budgets and shows how much of it is used. Transfers never count against a budget, and subcategory spending counts toward its parent.</p>
+  </div>
+  <figure class="shot"><img src="/assets/img/budgets.webp" alt="Budgets screen with category progress bars" loading="lazy" width="411" height="896"><figcaption>Category budgets</figcaption></figure>
+</section>
+
+<!-- ============ HOME ============ -->
+<section class="feature" id="home">
+  <div>
+    <h2><img src="/assets/icons/investment.webp" alt="" width="44" height="44">The Home dashboard</h2>
+    <p class="lede">Your month on one screen: how much came in, how much went out, where it went, and what’s due soon.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Most days you only want one answer: “Am I okay this month?” Home gives you that, with charts that read at a glance. The numbers are the hero; labels stay small and quiet.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>On the 1st you open the app and see an EMI due tomorrow, a subscription overdue by 18 days, and net savings of ₹15,000 so far. You tap <em>Mark paid</em> on the EMI right from Home.</p></div>
+    <h3>What you can show</h3>
+    <table>
+      <tr><th>Card</th><th>What it tells you</th></tr>
+      <tr><td>Upcoming EMIs / subscriptions / debts</td><td>Payments due this week, with a one-tap <em>Mark paid</em></td></tr>
+      <tr><td>Month overview</td><td>Net savings, money in, money out, budget left</td></tr>
+      <tr><td>Spending pace</td><td>This month against last month, day by day</td></tr>
+      <tr><td>Money already committed</td><td>EMIs, renewals and debts due in the next 30 days</td></tr>
+      <tr><td>Top expense categories</td><td>A donut chart of where the month’s money went</td></tr>
+      <tr><td>What changed</td><td>Categories up or down compared with your usual</td></tr>
+      <tr><td>Money in vs money out</td><td>Six months of income and spending side by side</td></tr>
+      <tr><td>Accounts, Net worth</td><td>Your balances, and what you own minus what you owe</td></tr>
+      <tr><td>Loan payoff</td><td>Balance left and when you’ll be debt-free</td></tr>
+      <tr><td>Recent transactions</td><td>The month’s latest entries</td></tr>
+    </table>
+    <h3>How to make Home yours</h3>
+    <ol class="steps">
+      <li>Go to <code>More → Settings → Home screen cards</code>.</li>
+      <li>Reorder the cards and switch off any you don’t need.</li>
+      <li>On Home, tap the month label to jump to another month; the right chevron opens that month’s transactions.</li>
+    </ol>
+  </div>
+  <figure class="shot"><img src="/assets/img/home-insights.webp" alt="Home with money in, money out chart and top expense categories donut" loading="lazy" width="411" height="896"><figcaption>Home insights</figcaption></figure>
+</section>
+
+<!-- ============ LOANS ============ -->
+<section class="feature" id="loans">
+  <div>
+    <h2><img src="/assets/icons/bank.webp" alt="" width="44" height="44">Loans &amp; EMIs</h2>
+    <p class="lede">Track a home, car, two-wheeler, personal, education or gold loan — the EMI schedule, the interest, and exactly what is left to pay.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>A loan isn’t just a monthly debit. You want to know how much <em>principal</em> you’ve cleared, how much interest it’s costing, and when it ends. Not every loan works the same way, so SimpleMoney supports different repayment styles.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You have a ₹40 lakh home loan and a gold loan. The home loan is a monthly EMI; the gold loan is interest-only with the principal due at the end. Both are tracked side by side, and Home shows “Overdue · 27 days” in red the moment you miss a due date, with a <em>Record EMI</em> button right there.</p></div>
+    <h3>Repayment styles</h3>
+    <ul class="tight">
+      <li><strong>Monthly EMI</strong> — each payment reduces the principal.</li>
+      <li><strong>Interest only, principal at the end</strong> — typical for gold loans or a home loan before possession.</li>
+      <li><strong>Everything at the end</strong> — one final payment at maturity.</li>
+      <li><strong>Flexible payments</strong> — pay whenever you can.</li>
+    </ul>
+    <h3>How to add a loan</h3>
+    <ol class="steps">
+      <li>Open <code>More → Loans</code> and tap <strong>+</strong>.</li>
+      <li>Enter the lender or loan name, the type, amount, interest rate and repayment style, plus the start date and duration.</li>
+      <li>For loans that put cash in your hands (personal, gold, other), choose which account received it — or pick <em>Do not add money to an account</em> if you only want to track the debt. Loans that buy something (home, car) are tracked as debt alone, because the lender pays the seller.</li>
+      <li>Review the summary and save. Turn on <em>Remind me</em> to be notified before each due date.</li>
+    </ol>
+    <h3>Each month</h3>
+    <ol class="steps">
+      <li>Tap <strong>Record EMI</strong> (or <em>Record payment</em>) on Home or in the loan.</li>
+      <li>Check the principal / interest split — use the lender’s own allocation if you have it, and enter any fees separately. Fees are never added to your principal.</li>
+      <li>Made a mistake? Use <strong>Undo latest action</strong> in the loan to restore the previous balance and remove the linked payment.</li>
+    </ol>
+    <p>When it’s done, <strong>Close loan</strong>. Removing a loan removes its tracking and reminders, but payments already recorded stay in your account history.</p>
+  </div>
+  <figure class="shot"><img src="/assets/img/loans.webp" alt="Loans screen showing repayment progress and upcoming EMIs" loading="lazy" width="411" height="896"><figcaption>Loan repayment progress</figcaption></figure>
+</section>
+
+<!-- ============ DEBTS ============ -->
+<section class="feature no-shot" id="debts">
+  <div>
+    <h2><img src="/assets/icons/family.webp" alt="" width="44" height="44">Debts: who owes whom</h2>
+    <p class="lede">Money lent to friends and family, or borrowed from them — kept per person, with a running balance.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Informal loans are the ones people forget. Tracking them per person means “Ravi owes me ₹2,500” is always one tap away, and a zero balance means you’re settled.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You lend Ravi ₹5,000 for two weeks and set a due date. He pays ₹2,500 back early — record it as <em>Collect</em>. A reminder appears before the due date for the rest.</p></div>
+    <h3>Four simple entries</h3>
+    <table>
+      <tr><th>Entry</th><th>Meaning</th></tr>
+      <tr><td>Lend</td><td>You gave someone money — they owe you more</td></tr>
+      <tr><td>Borrow</td><td>You received money — you owe them more</td></tr>
+      <tr><td>Collect</td><td>They paid you back</td></tr>
+      <tr><td>Repay</td><td>You paid them back</td></tr>
+    </table>
+    <h3>How to use it</h3>
+    <ol class="steps">
+      <li>Open <code>More → Debts</code> and tap <strong>+</strong>, then choose <em>Someone owes you</em> or <em>You owe someone</em>.</li>
+      <li>Pick the person — type a name or <em>Choose from contacts</em>. The system contact picker hands the app only the person you choose, so no contacts permission is needed.</li>
+      <li>Enter the amount, an optional due date and note. Choose the account the money moved through, or keep it as a record only.</li>
+      <li>Open a person to see their full history and settle up later.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ SUBSCRIPTIONS ============ -->
+<section class="feature" id="subscriptions">
+  <div>
+    <h2><img src="/assets/icons/calendar.webp" alt="" width="44" height="44">Subscriptions</h2>
+    <p class="lede">Netflix, the gym, cloud storage — everything that renews, with what it costs and what’s coming.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Small recurring charges are easy to forget and add up fast. A single list, a monthly-cost total, and a six-month forecast makes them visible.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>The forecast shows October as your highest bill month (₹5,343) because an annual plan renews. You decide to pause one you barely use. The same screen separates ₹843 that’s <em>already overdue</em> from the forecast so nothing gets lost.</p></div>
+    <h3>How to add and manage</h3>
+    <ol class="steps">
+      <li>Open <code>More → Subscriptions</code> and tap <strong>+</strong>.</li>
+      <li>Name it (service logos are suggested for popular names), set the price, billing cycle (weekly, monthly, every 3 months or yearly), next renewal date and the account it’s paid from.</li>
+      <li>When a renewal arrives, tap <strong>Mark paid</strong> — this records the expense. Or <strong>Skip this renewal</strong> if you didn’t pay it.</li>
+      <li>Not using it for a while? <strong>Pause</strong> it, and <strong>Resume</strong> later. Paused plans are left out of the forecast.</li>
+    </ol>
+    <p>Month-based plans remember your chosen day: one that renews on the 31st lands on the last day of shorter months and goes back to the 31st afterwards.</p>
+  </div>
+  <figure class="shot"><img src="/assets/img/subscriptions.webp" alt="Subscriptions screen with six-month bill forecast" loading="lazy" width="411" height="896"><figcaption>Plan for upcoming bills</figcaption></figure>
+</section>
+
+<!-- ============ CURRENCY ============ -->
+<section class="feature" id="currency">
+  <div>
+    <h2><img src="/assets/icons/all_accounts.webp" alt="" width="44" height="44">Multiple currencies</h2>
+    <p class="lede">Hold accounts in different currencies and still see one combined total.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>If you work abroad, travel, or keep savings in another currency, you need both views: each currency on its own, and an overall picture.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You have INR accounts and a SAR account. Home’s account selector shows <em>All accounts · INR</em> with the rate date, while a single-currency view shows exactly what’s in each currency.</p></div>
+    <h3>How to set it up</h3>
+    <ol class="steps">
+      <li>Give each account its own currency when you create it.</li>
+      <li>Choose your <strong>Main currency</strong> in <code>More → Settings → Main currency</code>. Combined balances and Home summaries use it.</li>
+      <li>Use the account/currency selector on Home, Transactions and Budgets to switch between “all accounts” and a single currency.</li>
+    </ol>
+    <div class="callout note"><b class="k">Good to know</b><p>Budgets, transactions and reminder amounts keep their <strong>original currency</strong>. Combined historical charts are <em>estimates</em> that use the latest cached rates and show the rate date (with a notice after seven days). If a rate is missing, the app names the currency and marks the total as incomplete. Rates are downloaded only when you actually have two or more currencies, contain no ledger data, and work from cache offline.</p></div>
+  </div>
+  <figure class="shot"><img src="/assets/img/home-upcoming.webp" alt="Home screen showing 'All accounts · INR' selector and upcoming EMIs" loading="lazy" width="411" height="896"><figcaption>Account &amp; currency scope on Home</figcaption></figure>
+</section>
+
+<!-- ============ UPI ============ -->
+<section class="feature no-shot" id="upi">
+  <div>
+    <h2><img src="/assets/icons/mobile_recharge.webp" alt="" width="44" height="44">Pay with UPI <small style="font-size:.6em;color:var(--muted)">(optional, off by default)</small></h2>
+    <p class="lede">Scan a shop’s UPI QR, pay through Google Pay, and have the expense recorded — in one flow.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>The usual annoyance with UPI is forgetting to log the payment afterwards. This links the two: you only save the expense once you confirm that the payment succeeded.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>At a roadside stall you scan the QR inside SimpleMoney, enter ₹150, choose <em>Food</em> and your bank account, then share the QR to Google Pay. When you return, tap <em>Yes</em> and the expense is saved. Tap <em>No</em> and you can keep it pending or delete it.</p></div>
+    <h3>How to turn it on and use it</h3>
+    <ol class="steps">
+      <li>Enable the option in <code>More → Settings → Google Pay option</code>. It adds <em>Pay with UPI</em> to the + menu.</li>
+      <li>Tap <strong>+ → Pay with UPI</strong> and scan the recipient’s QR (camera permission is requested the first time).</li>
+      <li>Confirm the amount, then choose an expense category and an INR account.</li>
+      <li>On <em>Share QR to pay</em>, choose Google Pay. Come back and confirm whether the payment worked.</li>
+    </ol>
+    <div class="callout note"><b class="k">Good to know</b><p>SimpleMoney never touches your bank or UPI credentials and doesn’t process payments. Google Pay limits QR-image payments to ₹2,000. Pending payments don’t change balances or budgets. The camera is used only to scan; the optional coarse location may add a nearby locality name as a note on that expense — you can decline it.</p></div>
+  </div>
+</section>
+
+<!-- ============ BACKUP ============ -->
+<section class="feature no-shot" id="backup">
+  <div>
+    <h2><img src="/assets/icons/deposit.webp" alt="" width="44" height="44">Backup &amp; sync</h2>
+    <p class="lede">Optional automatic backup to a hidden folder in your own Google Drive, so a lost or replaced phone doesn’t mean lost records.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Offline-first means your data lives on your phone — great for privacy, risky if the phone breaks. Backup is the safety net, and it’s your choice whether to use it. There’s no SimpleMoney server in the middle.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>Your phone falls in water. On the new one you install SimpleMoney, sign in to the same Google account, and restore the newest backup — accounts, transactions, budgets, loans and all.</p></div>
+    <h3>How to turn it on</h3>
+    <ol class="steps">
+      <li>Tap <strong>Sign in with Google</strong> on the first-launch welcome screen, or go to <code>More → Settings → Sync</code>.</li>
+      <li>Grant access. SimpleMoney asks only for its own hidden app-data folder in Drive, plus your email and profile picture to show which account is connected.</li>
+      <li>The first upload contains everything; after that, changes upload automatically in the background and survive being offline — they queue up and retry.</li>
+      <li>Check the status card: <em>Up to date</em>, <em>Syncing…</em> or <em>N changes waiting</em>. Use <strong>Sync now</strong> to force it, or <strong>Turn off sync</strong> to stop.</li>
+    </ol>
+    <div class="callout note"><b class="k">Good to know</b><p>This is a backup that you restore, not live merging between two phones editing at once. Android decides exactly when background work runs, so battery saver can delay uploads; opening the app triggers another attempt. Turning sync off keeps your local data and the files already in Drive.</p></div>
+  </div>
+</section>
+
+<!-- ============ SECURITY ============ -->
+<section class="feature no-shot" id="security">
+  <div>
+    <h2><img src="/assets/icons/insurance.webp" alt="" width="44" height="44">Security</h2>
+    <p class="lede">Lock the app with your phone’s own fingerprint, face, PIN, pattern or password — and keep amounts out of sight.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>Your balances are personal. Security is built on Android’s own authentication, so SimpleMoney never sees or stores your biometrics or screen-lock credentials.</p></div>
+    <div class="callout story"><b class="k">In real life</b><p>You hand your phone to a friend to look at photos. Amounts are hidden with dots, the app preview in recent apps is covered, and opening SimpleMoney asks for your fingerprint.</p></div>
+    <h3>What you can switch on (<code>More → Settings → Security</code>)</h3>
+    <ul class="tight">
+      <li><strong>App lock</strong> — require device authentication when opening the app.</li>
+      <li><strong>Lock after time away</strong> — choose how long you can leave before it asks again.</li>
+      <li><strong>Lock when the screen turns off</strong> and <strong>when cleared from recents</strong> — stricter options.</li>
+      <li><strong>Authenticate to show amounts</strong> — hidden balances and Home totals need your fingerprint, face or PIN to reveal.</li>
+      <li><strong>Hide app preview</strong> — covers the app in the recent-apps switcher.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ DATA ============ -->
+<section class="feature no-shot" id="data">
+  <div>
+    <h2><img src="/assets/icons/lightning.webp" alt="" width="44" height="44">Your data</h2>
+    <p class="lede">Take it out, bring it in, or erase it. It’s your data.</p>
+    <div class="callout why"><b class="k">Why it’s there</b><p>No lock-in. You can leave, switch phones without Google, or hand a spreadsheet to your accountant.</p></div>
+    <h3>Under <code>More → Settings → Your data</code></h3>
+    <table>
+      <tr><th>Action</th><th>What it does</th></tr>
+      <tr><td>Export all data</td><td>Creates a file you can import later</td></tr>
+      <tr><td>Export transactions</td><td>A CSV for Excel or Google Sheets</td></tr>
+      <tr><td>Import from file</td><td>Replaces this phone’s data with the file’s (you’re asked to confirm first)</td></tr>
+      <tr><td>Delete data on this phone</td><td>Erases the local ledger; your Google Drive copy stays</td></tr>
+      <tr><td>Delete data from Google Drive</td><td>Erases what was synced and turns sync off</td></tr>
+    </table>
+    <div class="callout story"><b class="k">In real life</b><p>At tax time you export transactions as CSV, open it in Google Sheets, and filter by the “Health” category to total your medical spending.</p></div>
+  </div>
+</section>
+
+<!-- ============ CUSTOMIZE ============ -->
+<section class="feature no-shot" id="customize">
+  <div>
+    <h2><img src="/assets/icons/gift_box.webp" alt="" width="44" height="44">Customization</h2>
+    <p class="lede">Make it feel like yours — and keep it comfortable at night.</p>
+    <ul class="tight">
+      <li><strong>Theme</strong> — follow your device, or always light or dark.</li>
+      <li><strong>Dark mode style</strong> — choose how deep the dark goes.</li>
+      <li><strong>Accent colour</strong> — blue by default; pick another.</li>
+      <li><strong>Vibrations</strong> — switch haptic feedback on or off in <code>Settings</code>.</li>
+      <li><strong>Home screen cards</strong> — see <a href="#home">the Home dashboard</a>.</li>
+    </ul>
+    <p>All of this is saved on your device only and applies everywhere. Find it in <code>More → Settings → Customization</code>.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="feature no-shot" id="faq">
+  <div>
+    <h2>Frequently asked questions</h2>
+    <details><summary>Do I need an account or internet?</summary><p>No account, ever. The app works fully offline. The internet is used only for optional Google Drive backup and, if you hold two or more currencies, downloading public exchange rates.</p></details>
+    <details><summary>Is there an iPhone version?</summary><p>SimpleMoney is built for Android.</p></details>
+    <details><summary>Where is my data stored?</summary><p>In a local database on your phone. There is no SimpleMoney server. If you enable backup, a copy goes to a hidden folder in your own Google Drive that only this app can read.</p></details>
+    <details><summary>I got a new phone. How do I move my data?</summary><p>If you used Backup &amp; sync, sign in with the same Google account on the new phone and restore the newest backup. Without Google, use <em>Your data → Export all data</em>, move the file across, and import it.</p></details>
+    <details><summary>Can two phones use the same data at once?</summary><p>Not live. Backup &amp; sync is for restoring after a reinstall or new phone — edits aren’t merged between two devices in real time.</p></details>
+    <details><summary>Why isn’t a transfer counted as spending?</summary><p>Moving money from your bank to your wallet doesn’t change how much you own, so it stays out of income, expense and budget totals.</p></details>
+    <details><summary>Does SimpleMoney move real money?</summary><p>No. It records and organises. With the optional UPI option, payment itself happens in the UPI app you choose, and SimpleMoney only saves the expense you confirm.</p></details>
+    <details><summary>How do I delete everything?</summary><p>Use <em>More → Settings → Your data</em>: delete data on the phone, and separately delete the Google Drive copy. Uninstalling also removes the local database.</p></details>
+    <details><summary>I have a question the docs don’t answer.</summary><p>See the <a href="/privacy#contact">contact details</a> in the privacy policy.</p></details>
+  </div>
+</section>
+</main>
+</div>
+
+<footer class="site-footer"><div class="wrap">
+  <span>© 2026 SimpleMoney · by <a href="https://aashglobal.in">Aash Global</a></span>
+  <span><a href="/">Home</a> · <a href="/privacy">Privacy policy</a></span>
+</div></footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
