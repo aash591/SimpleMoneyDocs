@@ -38,7 +38,7 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 h1, h2, h3, h4 { margin: 0; line-height: 1.1; letter-spacing: -0.02em; }
 p { margin: 0 0 0.9em; }
 a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: currentColor; transition: text-decoration-color 0.2s; }
@@ -80,7 +80,7 @@ a:hover { text-decoration-color: transparent; }
 .reel { overflow: hidden; padding: 30px 0 70px; }
 .reel-track { display: flex; gap: 36px; width: max-content; animation: slide 60s linear infinite; }
 .reel:hover .reel-track { animation-play-state: paused; }
-.reel img { width: min(340px, 62vw); border-radius: 26px; }
+.reel img { width: min(340px, 62vw); height: auto; aspect-ratio: 9 / 16; border-radius: 26px; }
 @keyframes slide { to { transform: translateX(calc(-50% - 18px)); } }
 
 .foot { text-align: center; padding: 10px 20px 46px; color: var(--soft); font-size: 0.95rem; }
@@ -161,6 +161,6 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reel-track { animation: none; }
-  .reel { overflow-x: auto; }
+  .reel { overflow-x: auto; scrollbar-width: none; }
   .headline .caret { animation: none; }
 }
