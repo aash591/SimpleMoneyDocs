@@ -1,0 +1,6 @@
+{
+	"$schema": "https://workers.cloudflare.com/wrangler-config-schema.json",
+	"name": "simplemoneydocs",
+	"compatibility_date": "2026-10-06",
+	"assets": { "directory": "." }
+}
