@@ -80,7 +80,7 @@ a:hover { text-decoration-color: transparent; }
 .reel { overflow: hidden; padding: 30px 0 70px; }
 .reel-track { display: flex; gap: 36px; width: max-content; animation: slide 60s linear infinite; }
 .reel:hover .reel-track { animation-play-state: paused; }
-.reel img { width: min(340px, 62vw); height: auto; aspect-ratio: 9 / 16; border-radius: 26px; }
+.reel img { width: min(300px, 58vw); height: auto; aspect-ratio: 540 / 1200; border-radius: 30px; border: 6px solid #0c0d12; background: #0c0d12; box-sizing: border-box; }
 @keyframes slide { to { transform: translateX(calc(-50% - 18px)); } }
 
 .foot { text-align: center; padding: 10px 20px 46px; color: var(--soft); font-size: 0.95rem; }
