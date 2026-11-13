@@ -123,6 +123,8 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; }
 .strip { display: flex; flex-wrap: wrap; gap: 30px 22px; padding: 14px 0 22px; margin: 6px 0 4px; counter-reset: step; }
 .strip figure { flex: 0 0 216px; margin: 0; counter-increment: step; }
 .strip img { border-radius: 20px; border: 5px solid #0c0d12; background: #0c0d12; width: 100%; height: auto; }
+.strip figure { min-width: 0; }
+.strip figcaption .path { white-space: normal; }
 .strip figcaption { font-size: 0.95rem; line-height: 1.4; margin-top: 12px; padding-left: 30px; position: relative; }
 .strip figcaption::before { content: counter(step); position: absolute; left: 0; top: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: var(--bg); font-size: 0.78rem; font-weight: 800; display: grid; place-items: center; }
 .strip.plain figcaption { padding-left: 0; color: var(--soft); }
