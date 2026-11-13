@@ -166,3 +166,6 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; }
   .reel { overflow-x: auto; scrollbar-width: none; }
   .headline .caret { animation: none; }
 }
+
+.footnote { display: block; font-size: 0.88rem; line-height: 1.5; color: var(--soft); border-top: 1px solid var(--line); padding-top: 12px; margin-top: 6px; }
+.footnote sup, .body sup a { font-weight: 700; }
