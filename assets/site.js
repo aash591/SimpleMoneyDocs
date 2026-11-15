@@ -1,4 +1,12 @@
 (function () {
+  // Header: show a hairline once the page has scrolled.
+  var bar = document.querySelector('.site-head');
+  if (bar) {
+    var onScroll = function () { bar.classList.toggle('scrolled', scrollY > 8); };
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   // Landing: type out the rotating second line of the headline.
   var typed = document.getElementById('typed');
   if (typed) {
@@ -29,8 +37,25 @@
 
   groups.forEach(function (g) {
     var chip = document.querySelector('.chips a[href="#' + g.id + '"]');
-    if (chip) chip.textContent += ' (' + g.querySelectorAll('details').length + ')';
+    if (!chip) return;
+    var n = document.createElement('span');
+    n.className = 'count';
+    n.textContent = g.querySelectorAll('details').length;
+    chip.appendChild(n);
   });
+
+  // Highlight the topic currently on screen.
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        [].forEach.call(document.querySelectorAll('.chips a'), function (a) {
+          a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id);
+        });
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    groups.forEach(function (g) { io.observe(g); });
+  }
 
   function unmark(root) {
     [].slice.call(root.querySelectorAll('mark')).forEach(function (m) {
