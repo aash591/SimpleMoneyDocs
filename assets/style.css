@@ -186,3 +186,9 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; }
 .seo-about ul { padding-left: 1.2em; }
 .seo-about summary { cursor: pointer; font-weight: 600; padding: 6px 0; }
 .seo-about details p { margin: 2px 0 10px; color: var(--soft); }
+.seo-about { max-width: 46em; margin: 48px auto 0; padding: 20px 20px 0; border-top: 1px solid var(--line); font-size: 0.95rem; color: var(--soft); box-sizing: border-box; }
+.seo-about h2 { font-size: 1.15rem; margin: 0 0 6px; color: var(--ink); }
+.seo-about h3 { font-size: 0.95rem; margin: 18px 0 4px; color: var(--ink); }
+.seo-about p { line-height: 1.55; margin: 0 0 10px; }
+.seo-about ul { padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.seo-about summary { font-size: 0.95rem; }
