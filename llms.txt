@@ -1,0 +1,21 @@
+# SimpleMoney
+
+> SimpleMoney is a free, private, offline-first expense manager and budget planner for Android. It reads bank SMS alerts on the phone, tracks loans, EMIs, debts, subscriptions and multi-currency accounts, needs no account, and has an optional AI assistant that connects Claude or ChatGPT over MCP. Made by Aash Global.
+
+Get it on Google Play: https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney
+
+## Pages
+- [Guides and FAQ](https://simplemoney.aashglobal.in/guides): step-by-step guides with real screenshots
+- [Best expense manager app for Android](https://simplemoney.aashglobal.in/best-expense-manager-app): what SimpleMoney does and who it suits
+- [Expense tracker that reads bank SMS](https://simplemoney.aashglobal.in/bank-sms-expense-tracker): how SMS tracking works, offline
+- [AI expense tracker with MCP](https://simplemoney.aashglobal.in/ai-expense-tracker): connect Claude or ChatGPT, you approve every change
+- [Cashew alternative](https://simplemoney.aashglobal.in/cashew-alternative)
+- [Money Lover alternative](https://simplemoney.aashglobal.in/money-lover-alternative)
+- [Privacy policy](https://simplemoney.aashglobal.in/privacy)
+
+## Key facts
+- Platform: Android. No account needed. Works offline.
+- Free to track money. SimpleMoney Pro adds unlimited budgets, all looks, the AI assistant and removes ads.
+- Bank SMS is read on the device and is not uploaded.
+- Backups go to the user's own Google Drive and can be encrypted (AES-256-GCM, key from a PIN that is never stored).
+- The AI assistant only suggests changes. The user approves each one in the app.
