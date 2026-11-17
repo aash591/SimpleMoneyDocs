@@ -7,8 +7,6 @@
 <meta name="description" content="SimpleMoney is a free expense manager and budget planner for Android. It reads bank SMS, tracks loans, EMIs and debts, works offline with no account, and has an AI assistant for Claude and ChatGPT (MCP).">
 <link rel="canonical" href="https://simplemoney.aashglobal.in/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0b0814" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SimpleMoney">
 <meta property="og:url" content="https://simplemoney.aashglobal.in/">
@@ -21,295 +19,153 @@
 <link rel="icon" href="/assets/img/favicon.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css?v=3">
+<link rel="stylesheet" href="/assets/style.css?v=2">
+<link rel="stylesheet" href="/assets/home.css?v=1">
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="/"><img src="/assets/img/app-icon-512.png" alt="" width="36" height="36"><span>SimpleMoney</span></a>
-    <nav class="site-nav" aria-label="Main">
-      <a href="/guides">Guides</a>
-      <a href="/ai-expense-tracker" class="hide-sm">AI &amp; MCP</a>
-      <a href="/privacy" class="hide-sm">Privacy</a>
-    </nav>
-    <a class="btn btn-dark btn-sm head-cta" href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener">Get the app</a>
-  </div>
-</header>
+<body class="home">
+<header class="bar"><div class="wrap">
+  <a class="brand" href="/"><img src="/assets/img/app-icon-512.png" alt="" width="34" height="34">SimpleMoney</a>
+  <nav class="menu" aria-label="Main">
+    <a href="/best-expense-manager-app">Why SimpleMoney</a>
+    <a href="/ai-expense-tracker">AI &amp; MCP</a>
+    <a href="/guides">Guides &amp; FAQ</a>
+    <a class="btn-sm" href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener">Get the app</a>
+  </nav>
+</div></header>
 
-<main id="main">
-<section class="hero">
-  <div class="wrap">
-    <div class="pitch">
-      <span class="eyebrow"><b>FREE</b> Expense manager for Android</span>
-      <h1 class="headline">
-        <span class="fixed">Track your money</span><br>
-        <span class="typed" id="typed" data-lines='["in a few seconds.","from your bank SMS.","without an account.","without the internet.","down to the last EMI.","in every currency.","and keep it yours."]'>in a few seconds.</span><span class="caret" aria-hidden="true"></span>
-      </h1>
-      <p class="hero-sub">SimpleMoney turns your bank SMS into transactions, keeps budgets, loans and debts in one place, and stores everything on your phone. No sign-up, no cloud account.</p>
-      <div class="hero-cta">
-        <a class="btn btn-dark btn-play" href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener">
-          <svg viewBox="0 0 40 40" aria-hidden="true"><path fill="#00d7fe" d="M7 5.6v28.8c0 .9.5 1.6 1.1 2L24.3 20 8.1 3.6C7.5 4 7 4.7 7 5.6z"/><path fill="#00f076" d="M29.7 14.6 11.4 4.1c-1.2-.7-2.4-.8-3.3-.5L24.3 20z"/><path fill="#ff3a44" d="M8.1 36.4c.9.3 2.1.2 3.3-.5l18.3-10.5L24.3 20z"/><path fill="#ffd500" d="m29.7 25.4 5.5-3.2c1.9-1.1 1.9-3.3 0-4.4l-5.5-3.2-5.4 5.4z"/></svg>
-          <span><small>Get it on</small><b>Google Play</b></span>
-        </a>
-        <a class="btn btn-ghost" href="/guides">See how it works</a>
-      </div>
-      <ul class="ticks">
-        <li>No account</li>
-        <li>Works offline</li>
-        <li>Reads bank &amp; UPI SMS</li>
-      </ul>
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="pill">Free · Offline · No account</span>
+    <h1><span class="fixed">Track your money</span><span class="typed" id="typed" data-lines='["in a few seconds.","from your bank SMS.","without an account.","without the internet.","down to the last EMI.","in every currency.","and keep it yours."]'>in a few seconds.</span><span class="caret" aria-hidden="true"></span></h1>
+    <p class="lead">The free expense manager and budget planner for Android. Add a transaction in seconds by hand, from your bank SMS, from a statement, or with AI. Loans, EMIs and subscriptions stay in order, and your money data never leaves your phone.</p>
+    <div class="cta-row"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener"><svg viewBox="0 0 40 40" aria-hidden="true"><path fill="#00d7fe" d="M7 5.6v28.8c0 .9.5 1.6 1.100 2L24.300 20 8.100 3.600C7.500 4 7 4.700 7 5.600z"/><path fill="#00f076" d="M29.700 14.600 11.400 4.100c-1.200-.7-2.400-.8-3.300-.5L24.300 20z"/><path fill="#ff3a44" d="M8.100 36.400c.9.300 2.100.2 3.300-.5l18.300-10.500L24.300 20z"/><path fill="#ffd500" d="m29.700 25.400 5.500-3.200c1.900-1.100 1.900-3.300 0-4.400l-5.500-3.200-5.400 5.400z"/></svg><span><small>Get it on</small><span>Google Play</span></span></a><a class="btn btn-ghost" href="/guides">See how it works</a></div>
+  </div>
+  <div class="stage" aria-hidden="true">
+    <div class="phone a"><img src="/assets/app/bud-list.webp" alt="" width="540" height="1170"></div>
+    <div class="phone b"><img src="/assets/app/home-top.webp" alt="" width="540" height="1170"></div>
+  </div>
+</div></section>
+
+<section class="trust"><div class="wrap"><ul>
+  <li><b>Add in seconds</b>SMS, by hand, import or AI</li>
+  <li><b>Works offline</b>No internet needed</li>
+  <li><b>No account</b>No sign-up, no email</li>
+  <li><b>AI-ready</b>Claude and ChatGPT over MCP</li>
+</ul></div></section>
+
+<section class="ways"><div class="wrap">
+  <div class="eyebrow">Add transactions</div>
+  <h2>Four ways to add a transaction. Pick whichever is comfortable for you.</h2>
+  <div class="way-grid">
+    <a class="way" href="/bank-sms-expense-tracker"><img src="/assets/app/sms-preview.webp" alt="From your bank SMS" width="540" height="1200" loading="lazy"><span class="num">1</span><b>From your bank SMS</b><span>Bank and UPI alerts are read on your phone and added for you.</span></a>
+    <a class="way" href="/guides#first-expense"><img src="/assets/app/add-category.webp" alt="By hand, in seconds" width="540" height="1200" loading="lazy"><span class="num">2</span><b>By hand, in seconds</b><span>Amount, category, account, save. One question per screen, no forms.</span></a>
+    <a class="way" href="/guides#import-statement"><img src="/assets/app/statement-review.webp" alt="From a statement" width="540" height="1200" loading="lazy"><span class="num">3</span><b>From a statement</b><span>Import an Excel, PDF or CSV file. Duplicates are caught, and the layout is remembered.</span></a>
+    <a class="way" href="/ai-expense-tracker"><img src="/assets/app/ai-suggestion-sms.webp" alt="With your AI" width="540" height="1200" loading="lazy"><span class="num">4</span><b>With your AI</b><span>Tell Claude or ChatGPT, or show it a bill. You approve what it adds.</span></a>
+  </div>
+</div></section>
+
+<div class="wrap rows">
+
+  <section class="row">
+    <div class="copy">
+      <div class="eyebrow">Bank SMS</div>
+      <h2>Your bank texts you. SimpleMoney does the rest.</h2>
+      <p>Bank and UPI alerts are read on your phone and turned into transactions, with the right account and amount. No bank login, and nothing is uploaded.</p>
+      <ul><li>Works for banks and wallets in many countries</li><li>Pick the category with one tap from the notification</li><li>Teach it a new bank format with AI in minutes</li></ul>
+      <a class="more" href="/bank-sms-expense-tracker">How SMS tracking works →</a>
     </div>
-    <div class="phones" aria-hidden="true">
-      <div class="phone back"><img src="/assets/app/bud-list.webp" alt="" width="540" height="1170"></div>
-      <div class="phone front"><img src="/assets/app/home-top.webp" alt="" width="540" height="1170"></div>
-      <div class="float-card sms"><i>₹</i><div><b>₹1,299 added</b><span>from your HDFC Bank SMS</span></div></div>
-      <div class="float-card lock"><i>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></i><div><b>Stays on your phone</b><span>No servers, no sign-up</span></div></div>
+    <div class="shots"><img src="/assets/app/sms-rule-result.webp" alt="Transactions the rule added" width="540" height="1200" loading="lazy"><img src="/assets/app/ob-sms.webp" alt="Allow SMS once, then it runs by itself" width="540" height="1200" loading="lazy"></div>
+  </section>
+
+  <section class="row">
+    <div class="copy">
+      <div class="eyebrow">Budgets</div>
+      <h2>Know what is left before you spend it.</h2>
+      <p>Set a limit for a category or the whole month and see your pace. The home screen shows what is coming up, so there are no surprises.</p>
+      <ul><li>Budgets with what is left and a pace line</li><li>Spending by category and by month</li><li>Upcoming EMIs and bills on the home screen</li></ul>
+      <a class="more" href="/best-expense-manager-app">Everything in the app →</a>
     </div>
+    <div class="shots"><img src="/assets/app/bud-list.webp" alt="Budgets with what is left" width="540" height="1200" loading="lazy"><img src="/assets/app/home-spending.webp" alt="Where your money went" width="540" height="1200" loading="lazy"></div>
+  </section>
+
+  <section class="row">
+    <div class="copy">
+      <div class="eyebrow">Loans &amp; EMIs</div>
+      <h2>Loans, debts and EMIs, finally in one place.</h2>
+      <p>See every loan with its progress and due dates. Keep money you lent or borrowed separate from daily spending, and get reminders before payments are due.</p>
+      <ul><li>Loan progress, remaining balance and payoff date</li><li>Who owes you and whom you owe</li><li>Subscriptions and recurring payments with a six-month forecast</li></ul>
+      <a class="more" href="/guides#loans">Read the loan guide →</a>
+    </div>
+    <div class="shots"><img src="/assets/app/loan-list.webp" alt="Loan progress and EMIs" width="540" height="1200" loading="lazy"><img src="/assets/app/rec-list.webp" alt="Recurring payments and a forecast" width="540" height="1200" loading="lazy"></div>
+  </section>
+
+  <section class="row">
+    <div class="copy">
+      <div class="eyebrow">AI assistant</div>
+      <h2>Ask Claude or ChatGPT about your money.</h2>
+      <p>Connect your own AI over MCP and ask in plain words. It can sort transactions, explain your spending and teach the app a new bank SMS. It only suggests. You approve every change.</p>
+      <ul><li>Pairing code and time-limited sessions</li><li>Exact totals from the app, not guesses</li><li>Works with Claude and ChatGPT</li></ul>
+      <a class="more" href="/ai-expense-tracker">AI expense tracker with MCP →</a>
+    </div>
+    <div class="shots"><img src="/assets/app/ai-top.webp" alt="Connect an AI assistant" width="540" height="1200" loading="lazy"><img src="/assets/app/ai-suggestion-sms.webp" alt="A suggestion waiting for your approval" width="540" height="1200" loading="lazy"></div>
+  </section>
+</div>
+
+<section class="tour"><div class="wrap">
+  <h2>And the rest of what you use every day</h2>
+  <p class="sub">Real screens from the app. Swipe along.</p>
+</div>
+  <div class="tour-track">
+    <figure><img src="/assets/app/set-currency.webp" alt="More than one currency" width="540" height="1200" loading="lazy"><figcaption><b>More than one currency</b>Each account in its own currency, with a combined total in your main one.</figcaption></figure>
+    <figure><img src="/assets/app/import-start.webp" alt="Import statements" width="540" height="1200" loading="lazy"><figcaption><b>Import statements</b>PDF, CSV and Excel, including Google Pay, PhonePe and Paytm.</figcaption></figure>
+    <figure><img src="/assets/app/sync-encrypt-pin.webp" alt="Encrypted backup" width="540" height="1200" loading="lazy"><figcaption><b>Encrypted backup</b>To your own Google Drive, locked with a PIN that is never stored.</figcaption></figure>
+    <figure><img src="/assets/app/set-security.webp" alt="App lock" width="540" height="1200" loading="lazy"><figcaption><b>App lock</b>Fingerprint, face or PIN. Your data stays on the phone.</figcaption></figure>
+    <figure><img src="/assets/app/customization.webp" alt="Make it yours" width="540" height="1200" loading="lazy"><figcaption><b>Make it yours</b>Looks, accent colours and searchable bank icons.</figcaption></figure>
   </div>
 </section>
 
-<section class="section" id="features">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">What it does</span>
-      <h2>Everything your money needs. Nothing it doesn’t.</h2>
-      <p>Daily spending, budgets, EMIs, money lent to friends and the bills that come back every month, in one calm app.</p>
-    </div>
-    <div class="bento">
-      <article class="card wide tinted">
-        <div class="card-text">
-          <h3>Your bank SMS, turned into transactions</h3>
-          <p>Bank and UPI alerts are read on your phone and added for you, with the right account and category. You stop typing in every payment.</p>
-          <a class="more" href="/bank-sms-expense-tracker">How SMS reading works</a>
-        </div>
-        <div class="shot low"><img src="/assets/app/sms-preview.webp" alt="A bank SMS for ₹1,299 turned into a Shopping expense" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card third">
-        <h3>Budgets that say what’s left</h3>
-        <p>See a safe amount to spend each day, and get warned when you’re ahead of pace.</p>
-        <div class="shot"><img src="/assets/app/bud-detail.webp" alt="A budget that is over by ₹1,000" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card third">
-        <h3>Loans &amp; EMIs to the last payment</h3>
-        <p>Principal repaid, interest, due dates and reminders before each EMI.</p>
-        <div class="shot"><img src="/assets/app/loan-list.webp" alt="Loan repayment progress across eight loans" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card wide tinted">
-        <div class="card-text">
-          <h3>Ask Claude or ChatGPT about your money</h3>
-          <p>Connect your own AI assistant over MCP. Ask where your money went or have it tidy up categories. Nothing changes until you approve it.</p>
-          <a class="more" href="/ai-expense-tracker">About the AI assistant</a>
-        </div>
-        <div class="shot"><img src="/assets/app/ai-top.webp" alt="Setting up the AI assistant in three steps" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card third">
-        <h3>Bills that come back</h3>
-        <p>Rent, SIPs, premiums and subscriptions, with a six-month forecast.</p>
-        <div class="shot"><img src="/assets/app/rec-list.webp" alt="Recurring payments by month" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card third">
-        <h3>Money lent and borrowed</h3>
-        <p>Know exactly what each friend owes you, and send a gentle reminder.</p>
-        <div class="shot"><img src="/assets/app/debt-person.webp" alt="Amit Verma owes you ₹25,000" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card third">
-        <h3>Import any statement</h3>
-        <p>PDF, CSV and Excel, including Google Pay, PhonePe and Paytm.</p>
-        <div class="shot"><img src="/assets/app/import-ready.webp" alt="Importing a bank statement" width="540" height="1200" loading="lazy"></div>
-      </article>
-      <article class="card mini">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></div>
-        <h3>Every currency</h3>
-        <p>Each account in its own currency, with one combined total.</p>
-      </article>
-      <article class="card mini">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 8a4 4 0 0 1-.5 10z"/><path d="M12 11v5M10 13.5h4"/></svg></div>
-        <h3>Encrypted backup</h3>
-        <p>To your own Google Drive, locked with a PIN that’s never stored.</p>
-      </article>
-      <article class="card mini">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <h3>Private on screen</h3>
-        <p>Amounts stay hidden until you tap the eye, and an app lock keeps others out.</p>
-      </article>
-    </div>
+<section class="band"><div class="wrap">
+  <div>
+    <h2>Your money stays on your phone.</h2>
+    <p>SimpleMoney has no accounts and no servers that hold your records. Your SMS are read on the device, and you decide what ever leaves it.</p>
+    <a class="more" href="/privacy">Read the privacy policy →</a>
   </div>
-</section>
+  <ul>
+    <li><b>Offline first</b><span>Everything works without internet.</span></li>
+    <li><b>You approve AI changes</b><span>The assistant only makes suggestions.</span></li>
+    <li><b>Backups you control</b><span>Your Google Drive, encrypted with AES-256.</span></li>
+  </ul>
+</div></section>
 
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="band">
-      <span class="kicker">Private by design</span>
-      <h2>Your money stays on your phone.</h2>
-      <div class="band-grid">
-        <div>
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6M3 3l18 18"/></svg></div>
-          <h3>No account</h3>
-          <p>No email, no password, no sign-up. Open the app and start.</p>
-        </div>
-        <div>
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18h3"/></svg></div>
-          <h3>SMS read on device</h3>
-          <p>Bank messages are processed on your phone. They’re never uploaded or sold.</p>
-        </div>
-        <div>
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div>
-          <h3>Your Drive, your PIN</h3>
-          <p>Optional backup goes to your own Google Drive, encrypted if you like.</p>
-        </div>
-        <div>
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
-          <h3>You approve AI changes</h3>
-          <p>The assistant suggests. Nothing is saved until you say yes.</p>
-        </div>
-      </div>
-      <p class="band-link"><a href="/privacy">Read the privacy policy</a></p>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0" aria-labelledby="inside">
-  <div class="wrap">
-    <div class="section-head center">
-      <span class="kicker">A look inside</span>
-      <h2 id="inside">Clear screens, one question at a time.</h2>
-    </div>
-  </div>
-  <div class="reel">
-    <div class="reel-track">
-      <img src="/assets/app/home-top.webp" alt="Your month at a glance, with upcoming EMIs" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/home-pace.webp" alt="Spending pace and what is coming up" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/home-spending.webp" alt="Where your money went" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/tx-list.webp" alt="All your transactions" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/bud-list.webp" alt="Budgets with what is left" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/bud-detail.webp" alt="See how a budget is going" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/rec-list.webp" alt="Recurring payments and a six-month forecast" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/loan-list.webp" alt="Loan progress and EMIs" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/sms-preview.webp" alt="Bank SMS added for you" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/ai-top.webp" alt="Ask Claude or ChatGPT, with your approval" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/home-top.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/home-pace.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/home-spending.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/tx-list.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/bud-list.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/bud-detail.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/rec-list.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/loan-list.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/sms-preview.webp" alt="" width="540" height="1200" loading="lazy">
-      <img src="/assets/app/ai-top.webp" alt="" width="540" height="1200" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:40px" id="pricing">
-  <div class="wrap">
-    <div class="section-head center">
-      <span class="kicker">Free or Pro</span>
-      <h2>Free is complete. Pro is nicer.</h2>
-      <p>Tracking your money is free, for good. Pro adds a few extras and removes the ads.</p>
-    </div>
-    <div class="plans">
-      <div class="plan">
-        <h3>Free</h3>
-        <p class="price">Everything you need to track</p>
-        <ul>
-          <li>Spending, income, accounts and transfers</li>
-          <li>Bank SMS reading and statement import</li>
-          <li>Loans, EMIs, debts and recurring payments</li>
-          <li>Up to 7 budgets</li>
-          <li>Backup to Google Drive and app lock</li>
-          <li>A few quiet ads, never while you add or browse</li>
-        </ul>
-      </div>
-      <div class="plan pro">
-        <h3>Pro <small>Optional</small></h3>
-        <p class="price">Everything in Free, plus</p>
-        <ul>
-          <li>Unlimited budgets</li>
-          <li>Every look and accent colour</li>
-          <li>The AI assistant for Claude and ChatGPT</li>
-          <li>No ads</li>
-          <li>Renews through Google Play, cancel any time</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0" aria-labelledby="explore">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Explore</span>
-      <h2 id="explore">Choosing an expense app?</h2>
-    </div>
-    <nav class="explore" aria-label="More about SimpleMoney">
-      <a href="/best-expense-manager-app">Best expense manager app<span>What to look for, and what SimpleMoney does</span></a>
-      <a href="/bank-sms-expense-tracker">Bank SMS expense tracker<span>Expenses added from your bank alerts</span></a>
-      <a href="/ai-expense-tracker">AI &amp; MCP<span>Claude and ChatGPT, with your approval</span></a>
-      <a href="/cashew-alternative">Cashew alternative<span>How the two apps compare</span></a>
-      <a href="/money-lover-alternative">Money Lover alternative<span>Offline, no account, reads SMS</span></a>
-    </nav>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="cta-band">
-      <img src="/assets/img/app-icon-512.png" alt="" width="76" height="76">
-      <h2>Know where your money goes.</h2>
-      <p>Free on Google Play. No account, and your data never leaves your phone unless you choose to back it up.</p>
-      <div class="hero-cta">
-        <a class="btn btn-dark btn-play" href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener">
-          <svg viewBox="0 0 40 40" aria-hidden="true"><path fill="#00d7fe" d="M7 5.6v28.8c0 .9.5 1.6 1.1 2L24.3 20 8.1 3.6C7.5 4 7 4.7 7 5.6z"/><path fill="#00f076" d="M29.7 14.6 11.4 4.1c-1.2-.7-2.4-.8-3.3-.5L24.3 20z"/><path fill="#ff3a44" d="M8.1 36.4c.9.3 2.1.2 3.3-.5l18.3-10.5L24.3 20z"/><path fill="#ffd500" d="m29.7 25.4 5.5-3.2c1.9-1.1 1.9-3.3 0-4.4l-5.5-3.2-5.4 5.4z"/></svg>
-          <span><small>Get it on</small><b>Google Play</b></span>
-        </a>
-        <a class="btn btn-ghost" href="/guides">Read the guides</a>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="center"><div class="wrap">
+  <h2>Try the best expense manager for yourself.</h2>
+  <p class="sub">Free on Google Play. Set up in a minute, with no account.</p>
+  <div class="cta-row"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener"><svg viewBox="0 0 40 40" aria-hidden="true"><path fill="#00d7fe" d="M7 5.6v28.8c0 .9.5 1.6 1.100 2L24.300 20 8.100 3.600C7.500 4 7 4.700 7 5.600z"/><path fill="#00f076" d="M29.700 14.600 11.400 4.100c-1.200-.7-2.400-.8-3.300-.5L24.300 20z"/><path fill="#ff3a44" d="M8.100 36.400c.9.300 2.100.2 3.300-.5l18.300-10.500L24.300 20z"/><path fill="#ffd500" d="m29.700 25.400 5.500-3.200c1.900-1.100 1.900-3.300 0-4.400l-5.500-3.200-5.400 5.400z"/></svg><span><small>Get it on</small><span>Google Play</span></span></a><a class="btn btn-ghost" href="/guides">Read the guides</a></div>
+</div></section>
 </main>
 
-<footer class="site-foot">
+<footer class="foot2">
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-about">
-        <a class="brand" href="/"><img src="/assets/img/app-icon-512.png" alt="" width="36" height="36" loading="lazy"><span>SimpleMoney</span></a>
-        <p>A private, offline expense manager for Android. No account needed. Your money stays on your phone.</p>
-      </div>
-      <div>
-        <h2>App</h2>
-        <ul>
-          <li><a href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener">Google Play</a></li>
-          <li><a href="/guides">Guides &amp; FAQ</a></li>
-          <li><a href="/ai-expense-tracker">AI &amp; MCP</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Compare</h2>
-        <ul>
-          <li><a href="/best-expense-manager-app">Best expense manager</a></li>
-          <li><a href="/bank-sms-expense-tracker">Bank SMS tracker</a></li>
-          <li><a href="/cashew-alternative">Cashew alternative</a></li>
-          <li><a href="/money-lover-alternative">Money Lover alternative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Legal</h2>
-        <ul>
-          <li><a href="/privacy">Privacy policy</a></li>
-          <li><a href="/terms">Terms of service</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-base">
-      <p>The free version has a few quiet ads, never while you add or browse. Pro removes them.</p>
-      <p>Made with care by <a href="https://aashglobal.in">Aash Global</a></p>
-    </div>
+    <nav aria-label="Explore"><b>Explore</b>
+      <a href="/best-expense-manager-app">Best expense manager app</a>
+      <a href="/bank-sms-expense-tracker">Bank SMS expense tracker</a>
+      <a href="/ai-expense-tracker">AI &amp; MCP</a>
+      <a href="/cashew-alternative">Cashew alternative</a>
+      <a href="/money-lover-alternative">Money Lover alternative</a>
+    </nav>
+    <nav aria-label="Help"><b>Help</b>
+      <a href="/guides">Guides &amp; FAQ</a>
+      <a href="/privacy">Privacy policy</a>
+      <a href="/terms">Terms</a>
+    </nav>
+    <nav aria-label="SimpleMoney"><b>SimpleMoney</b>
+      <a href="https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney" rel="noopener">Google Play</a>
+      <a href="https://aashglobal.in">Aash Global</a>
+    </nav>
   </div>
+  <p class="fine">No account needed. The free version has a few quiet ads, never while you add or browse; Pro removes them. Made with care by Aash Global.</p>
 </footer>
-<script src="/assets/site.js?v=3" defer></script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
