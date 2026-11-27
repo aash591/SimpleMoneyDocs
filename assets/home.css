@@ -352,3 +352,14 @@ body.home {
   .home .tour figcaption { font-size: .8rem; margin-top: 10px; }
   .home .tour figcaption b { font-size: .92rem; }
 }
+
+/* Comparison table: fit the phone screen, no sideways scroll */
+@media (max-width: 720px) {
+  .home .table-wrap { overflow-x: visible; margin-inline: 0; padding-inline: 0; }
+  .home .comp-table { min-width: 0; table-layout: fixed; }
+  .home .comp-table th { font-size: .62rem; letter-spacing: .04em; padding: 10px 6px; }
+  .home .comp-table th:first-child, .home .comp-table td:first-child { width: 28%; }
+  .home .comp-table td { padding: 12px 6px; font-size: .82rem; overflow-wrap: anywhere; }
+  .home .comp-table td small { font-size: .72rem; line-height: 1.35; }
+  .home .comp-table .brand-tag img { display: none; }
+}
