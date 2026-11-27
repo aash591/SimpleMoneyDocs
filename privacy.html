@@ -9,7 +9,7 @@
 <link rel="icon" href="/assets/img/favicon.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css?v=2">
+<link rel="stylesheet" href="/assets/style.css?v=3">
 </head>
 <body>
 <nav class="top">
@@ -37,7 +37,7 @@
 
   <h2>SMS messages</h2>
   <p>With your permission (<code>READ_SMS</code> and <code>RECEIVE_SMS</code>), SimpleMoney reads the SMS on your phone, including new messages as they arrive, to find bank transaction messages and add them as transactions. This is the app’s main feature. The app uses only the amount, date, account and merchant details from those messages. Other messages, such as OTPs and personal chats, are ignored and not stored.</p>
-  <p>Messages are processed on your device. They are not sold, shared, or sent to us, and they are not used for advertising. The only exception is the optional “Report SMS” feature: if you select a message and choose to report it, that message, with any note you add, is sent securely to the developer so the parser can be improved. You can stop it at any time in the app (More › Settings › Transactions from SMS) or by turning off SMS in Android’s app permissions.</p>
+  <p>Messages are processed on your device. They are not sold, shared, or sent to us, and they are not used for advertising. The only exception is the optional report feature in Smart tracking (Teach a missed SMS): if you select a message and choose to report it, that message, with any note you add, is sent securely to the developer so the parser can be improved. You can stop it at any time in the app (More › Smart tracking › Transactions from SMS) or by turning off SMS in Android’s app permissions.</p>
 
   <h2>Ads and purchases</h2>
   <p>The free version shows a few ads from Google AdMob, only after bigger actions and never while you add transactions or browse. Google may collect your advertising ID, IP address, ad interactions and diagnostic information to serve ads, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. AdMob has no access to your financial data or SMS. You can buy Pro through Google Play to remove ads; we never receive your payment details.</p>
@@ -72,13 +72,13 @@
   <p>When you export your data or import a file, the app uses Android’s file picker and share features. Exported files are created where you choose to save or send them; we do not receive them.</p>
 
   <h2>Internet access</h2>
-  <p>The app uses the internet for (1) Google sign-in and Drive backup, if enabled, (2) showing ads in the free version, and (3) downloading public currency exchange rates, only if you hold accounts in two or more currencies. Rates are fetched from public currency-rate services (hosted through jsDelivr, with a Cloudflare fallback). These requests contain only a currency code — never your financial data or personal information — though, as with any internet request, the servers can see your IP address.</p>
+  <p>The app uses the internet for (1) Google sign-in and Drive backup, if enabled, (2) showing ads in the free version, (3) downloading public currency exchange rates, only if you hold accounts in two or more currencies, and (4) looking up the latest closing price of stocks and funds you add to Portfolio, once a day (AMFI for Indian mutual funds, Yahoo Finance for stocks and ETFs); those requests contain only the ticker or fund code, never your amounts, accounts or personal information. Rates are fetched from public currency-rate services (hosted through jsDelivr, with a Cloudflare fallback). These requests contain only a currency code — never your financial data or personal information — though, as with any internet request, the servers can see your IP address.</p>
 
   <h2>UPI payments</h2>
   <p>SimpleMoney does not process payments and does not handle your bank or UPI credentials. Payments are completed in the UPI app you choose (for example Google Pay). The app only records the expense you confirm.</p>
 
   <h2>Data sharing</h2>
-  <p>We do not sell, rent or share your financial data or SMS with third parties. The only transfers are those you start yourself (Drive backup to your own Google account, or Report SMS to the developer), and the ad requests made by Google AdMob in the free version, as described above.</p>
+  <p>We do not sell, rent or share your financial data or SMS with third parties. The only transfers are those you start yourself (Drive backup to your own Google account, or reporting an SMS to the developer), and the ad requests made by Google AdMob in the free version, as described above.</p>
 
   <h2>Data retention and deletion</h2>
   <p>Your data stays on your device until you delete it or uninstall the app. In the app, <em>More → Settings → Your data</em> lets you delete the data on your phone and delete the data synced to Google Drive. You can also remove the backup from your Google Account settings (Security → Third-party apps with account access → SimpleMoney → Delete all data from this app).</p>
