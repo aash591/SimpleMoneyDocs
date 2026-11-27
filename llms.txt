@@ -4,6 +4,8 @@
 
 Get it on Google Play: https://play.google.com/store/apps/details?id=com.aash591.SimpleMoney
 
+Source code (open source, AGPL-3.0): https://github.com/aash591/Simple-Money
+
 ## Pages
 - [Guides and FAQ](https://simplemoney.aashglobal.in/guides): step-by-step guides with real screenshots
 - [Best expense manager app for Android](https://simplemoney.aashglobal.in/best-expense-manager-app): what SimpleMoney does and who it suits
