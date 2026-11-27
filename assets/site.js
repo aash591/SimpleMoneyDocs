@@ -51,28 +51,30 @@
     function label() { if (btn) { btn.textContent = userPaused ? 'Play' : 'Pause'; btn.setAttribute('aria-pressed', userPaused); btn.setAttribute('aria-label', userPaused ? 'Resume scrolling' : 'Pause scrolling'); } }
     label();
     if (btn) btn.addEventListener('click', function () { userPaused = !userPaused; label(); });
-    function touchHold() { resumeAt = performance.now() + 2500; }
+    var touching = false, lastExt = 0;
     track.addEventListener('mouseenter', function () { hold = true; });
     track.addEventListener('mouseleave', function () { hold = false; });
+    track.addEventListener('touchstart', function () { touching = true; }, { passive: true });
+    track.addEventListener('touchend', function () { touching = false; }, { passive: true });
+    track.addEventListener('touchcancel', function () { touching = false; }, { passive: true });
     track.addEventListener('pointerdown', function (e) {
       if (e.pointerType !== 'mouse') return;
-      dragging = true; moved = 0; x0 = e.clientX; s0 = track.scrollLeft; track.classList.add('drag');
+      dragging = true; x0 = e.clientX; s0 = track.scrollLeft; track.classList.add('drag');
       track.setPointerCapture(e.pointerId);
     });
     track.addEventListener('pointermove', function (e) {
-      if (!dragging) return; moved = Math.abs(e.clientX - x0);
-      track.scrollLeft = s0 - (e.clientX - x0); wrap();
+      if (!dragging) return;
+      track.scrollLeft = s0 - (e.clientX - x0); wrap(); pos = track.scrollLeft;
     });
-    function end() { dragging = false; track.classList.remove('drag'); touchHold(); }
+    function end() { dragging = false; track.classList.remove('drag'); pos = track.scrollLeft; }
     track.addEventListener('pointerup', end); track.addEventListener('pointercancel', end);
-    ['touchstart', 'wheel'].forEach(function (n) { track.addEventListener(n, touchHold, { passive: true }); });
     track.addEventListener('scroll', function () { if (!dragging) wrap(); }, { passive: true });
     document.addEventListener('visibilitychange', function () { last = 0; });
     function tick(t) {
       if (last) {
         var dt = Math.min(t - last, 64) / 1000;
-        if (!userPaused && !hold && !dragging && t > resumeAt) {
-          if (Math.abs(track.scrollLeft - pos) > 2) pos = track.scrollLeft;
+        if (Math.abs(track.scrollLeft - pos) > 2) { pos = track.scrollLeft; lastExt = t; }
+        if (!userPaused && !hold && !dragging && !touching && t - lastExt > 120) {
           pos += SPEED * dt; if (pos >= half()) pos -= half();
           track.scrollLeft = pos;
         }

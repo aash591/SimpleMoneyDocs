@@ -340,3 +340,15 @@ body.home {
 .home .tour .wrap { position: relative; }
 .home .tour-pause { margin-top: 14px; font: inherit; font-size: .85rem; font-weight: 600; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 7px 16px; cursor: pointer; }
 .home .tour-pause:hover { border-color: var(--ink); }
+
+/* Smaller phones in the screens strip so a whole screen and its title fit */
+.home .tour figure { flex-basis: min(190px, 52vw); }
+.home .tour figcaption { font-size: .88rem; }
+.home .tour figcaption b { font-size: 1rem; }
+@media (max-width: 720px) {
+  .home .tour figure { flex-basis: min(150px, 42vw); }
+  .home .tour-track { gap: 12px; }
+  .home .tour img { border-width: 4px; border-radius: 20px; }
+  .home .tour figcaption { font-size: .8rem; margin-top: 10px; }
+  .home .tour figcaption b { font-size: .92rem; }
+}
