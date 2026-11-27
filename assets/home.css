@@ -363,3 +363,12 @@ body.home {
   .home .comp-table td small { font-size: .72rem; line-height: 1.35; }
   .home .comp-table .brand-tag img { display: none; }
 }
+
+/* "Four ways" on phones: smaller screens so a whole one, with its title, fits */
+@media (max-width: 720px) {
+  .home .way-grid { gap: 12px; }
+  .home .way { flex-basis: min(150px, 42vw); font-size: .8rem; }
+  .home .way b { font-size: .98rem; }
+  .home .way img { border-width: 4px; border-radius: 18px; }
+  .home .way .num { width: 26px; height: 26px; font-size: .78rem; }
+}
